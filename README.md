@@ -19,13 +19,13 @@ template/ 以下のファイルを gulp-kss の templateディレクトリにコ
 ```
 npm install
 ```
-jQuery
+jQuery  
 /Users/nakagawa/Git/new_ui/node_modules/jquery/dist
 
-_normalize.scss is include to generic.css on header.
+_normalize.scss is include to generic.css on header.  
 /Users/nakagawa/Git/new_ui/node_modules/normalize-scss/sass
 
-google code-prettify
+google code-prettify  
 https://github.com/google/code-prettify/blob/master/docs/getting_started.md#serving-your-own-js--css
 
 ### gulp tasks
