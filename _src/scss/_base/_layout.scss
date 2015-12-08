@@ -1,0 +1,182 @@
+// layouts
+// ===================================================
+
+// ブロックをグレーにしてくれる
+// @include edit();
+
+// wrap
+// =========================
+
+.#{$kssPrefix}-content-wrap {
+    @include align-items(stretch);
+    @include display(flex);
+    @include flex-direction(row);
+    @include justify-content(flex-start);
+    height: 100vh;
+    font-family: $fontDefaultJa;
+}
+
+// main
+// =========================
+
+.#{$kssPrefix}-content-main {
+    @include flex(4);
+    @include display(flex);
+    @include flex-direction(column);
+    overflow: hidden;
+    &-inner {
+        @include flex(1);
+        overflow-y: auto;
+    }
+}
+
+// section
+// =========================
+
+.#{$kssPrefix}-section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 40px 40px 0;
+    @include mq(medium) {
+        width: 820px;
+    }
+    &.--depth1 {
+        padding: 30px 40px;
+        background-color: $primaryThemeColor;
+        color: #fff;
+        @include mq(medium) {
+            width: 100%;
+        }
+    }
+    &__title {
+        margin: 0 0 15px;
+        @include fz(24);
+        color: $primaryThemeColor;
+        &.--depth1 {
+            @include fz(28);
+            color: #fff;
+        }
+    }
+    &__description {
+        margin: 0 0 30px;
+        &.--depth1 {
+            margin: 0;
+        }
+    }
+}
+
+// block
+// =========================
+
+.#{$kssPrefix}-block{
+    &__markup {
+        padding: 15px 0 15px 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        overflow: scroll;
+        overflow-x: auto;
+        @include fz(16);
+    }
+    &__example {
+        margin-bottom: 30px;
+    }
+}
+
+.#{$kssPrefix}-modifier {
+    &__head {
+    }
+    &__name {
+        margin: 0 0 15px;
+        @include fz(20);
+        color: $primaryThemeColor;
+    }
+    &__description {
+    }
+    &__markupPre {
+        margin-bottom: 30px;
+    }
+}
+// code view box reset
+pre.prettyprint {
+    margin: 0;
+    padding: 0;
+    border: 0 none;
+}
+
+// side
+// =========================
+
+.#{$kssPrefix}-content-side {
+    @include flex(1);
+    overflow-y: auto;
+    background-color: #f8f8f8;
+}
+
+// header
+// =========================
+.#{$kssPrefix}-content-header {
+    padding: 30px;
+}
+
+.#{$kssPrefix}-site-id {
+    margin: 0;
+    padding: 0;
+    color: $primaryThemeColor;
+}
+
+// side nav
+// =========================
+
+.#{$kssPrefix}-nav {
+    &__parent {
+        margin: 0;
+        padding: 0;
+    }
+    &__child {
+        margin: 0;
+        padding: 0;
+        // display: none;
+        &.is_active {
+            display: block;
+        }
+    }
+    &__item {
+        list-style: none;
+        a {
+            width: 100%;
+            box-sizing: border-box;
+            display: inline-block;
+            padding: 8px 30px;
+            color: $primayBlack;
+            text-decoration: none;
+            &:active, &:hover  {
+                color: $primayBlack;
+                background-color: #E8E8E8;
+                text-decoration: none;
+            }
+        }
+        &.--parent {
+        }
+        &.--child {
+            a {
+                padding-left: 45px;
+            }
+        }
+    }
+    &__ref {
+        padding-right: .5em;
+    }
+    &__name {
+    }
+}
+
+// footer
+// =========================
+
+.#{$kssPrefix}-content-footer {
+    margin-top: 40px;
+    padding: 40px;
+    @include fz(12);
+    line-height: 1.6;
+    color: $gray;
+}

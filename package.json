@@ -1,0 +1,37 @@
+{
+  "name": "gulp-kss-template",
+  "version": "1.0.0",
+  "description": " ",
+  "main": "glupfile.js",
+  "repository": {
+    "type": "git"
+  },
+  "author": "nakagaw",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-autoprefixer": "^2.1.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-watch": "^4.2.1",
+    "gulp-webpack": "^1.5.0",
+    "gulp-webserver": "^0.9.0",
+    "imports-loader": "^0.6.3",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.0.2",
+    "webpack": "^1.10.1",
+    "vinyl": "^0.4.6",
+    "gulp-sass": "^2.0.1",
+    "gulp-if": "^1.2.5",
+    "minimist": "^1.1.1",
+    "node-bourbon": "^4.2.3",
+    "gulp-scss-lint": "^0.2.0",
+    "file-loader": "^0.8.4",
+    "url-loader": "^0.5.6",
+    "gulp-combine-media-queries": "^0.2.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "knockout": "^3.4.0",
+    "normalize.css": "^3.0.3"
+  }
+}

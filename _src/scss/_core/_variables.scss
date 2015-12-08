@@ -1,0 +1,53 @@
+// variables.scss
+// =============================================================
+
+// prefix
+$kssPrefix: 'kss';
+
+// colors
+// ======
+
+// text
+$primayBlack: #333;
+$normalBlack: #555;
+$gray: #888;
+
+// links
+$linkColor: #0070d2;
+$linkHoverColor: #005fb2;
+
+// default theme
+$primaryThemeColor: #8CC88C;
+$accentThemeColor: #7AB894;
+$secondlyThemeColor: #E5ECE1;
+$thirdlyThemeColor: #F3F8F4;
+
+
+// Content width sizes
+// =====
+
+$pageSize: 1140px;
+$headerHeight: 50px;
+$contentNav: 180px;
+$contentNavClose: 40px;
+$sectionWrap: 800px;
+
+// Z-Index Scale (private vars)
+// =====
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+
+// Defining font family
+// ====================
+
+$fontDefault: Helvetica, Arial, sans-serif ;
+$fontDefaultJa: Helvetica, "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, Arial, sans-serif;
