@@ -89,3 +89,17 @@ $xxxlargeRange: 1600px;
         @content;
     }
 }
+
+// for lang ja (japanese)
+@mixin ja {
+    html[lang="ja"] & {
+        @content;
+    }
+}
+
+// for lang en (English)
+@mixin en {
+    html[lang="en-US"] & {
+        @content;
+    }
+}

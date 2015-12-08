@@ -43,14 +43,14 @@
     <div class="kss-content-main">
         <div class="kss-content-main-inner">
             {{#if overview}}
-            <section id="section-0" class="kss-kss-section kss-overview">
+            <section id="section-0" class="kss-section --overview">
                 {{html overview}}
             </section>
             {{else}}
             {{#eachSection rootNumber}}
             <!-- TODO: title hover でアンカーリンクコピーボタン出す -->
-            <section id="section-{{reference}}" class="kss-section kss-section --depth{{refDepth}}">
-                <h1 class="kss-section__title kss-section__title --depth{{refDepth}}"><span class="kss-section__ref">{{reference}}</span> {{header}}</h1>
+            <section id="section-{{reference}}" class="kss-section --depth{{refDepth}}">
+                <h1 class="kss-section__title --depth{{refDepth}}"><span class="kss-section__ref">{{reference}}</span> {{header}}</h1>
                 {{#ifAny markup modifiers}}
                 {{#if description}}
                 <div class="kss-section__description --depth{{refDepth}}">

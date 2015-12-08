@@ -1,0 +1,29 @@
+// page
+// ===================================================
+
+// overview
+// =========================
+
+.#{$kssPrefix}-section.--overview {
+    h1 {
+        margin: 0;
+        padding: 0;
+        @include fz(28);
+        color: $primaryThemeColor;
+    }
+    h2 {
+        margin: 0 0 15px;
+        @include fz(24);
+        color: $primaryThemeColor;
+    }
+    p {
+        margin: 0 0 30px;
+    }
+    .#{$kssPrefix}-section__description {
+        margin: 0 0 40px;
+    }
+    .#{$kssPrefix}-block {
+        margin: 30px 0;
+    }
+
+}

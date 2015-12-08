@@ -1,6 +1,12 @@
 # gulp kss template
 
-template/ 以下のファイルを gulp-kss の templateディレクトリにコピー
+Please copy files to gulp-kss template directory below:
+```
+├── styleguide.md - overview
+└── _template - templateDirectory
+       ├── index.html
+       └── public
+```
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;public/kss.css&quot; /&gt;  
 &lt;link rel=&quot;stylesheet&quot; href=&quot;generic.css&quot; /&gt;  <==  Change your site's dist css
