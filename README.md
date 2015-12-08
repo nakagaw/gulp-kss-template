@@ -3,10 +3,12 @@
 Please copy files to gulp-kss template directory below:
 ```
 ├── styleguide.md - overview
-└── _template - templateDirectory
+└── template - templateDirectory
        ├── index.html
        └── public
 ```
+
+And, change css path to your compiled css name on template/index.html.
 
 &lt;link rel=&quot;stylesheet&quot; href=&quot;public/kss.css&quot; /&gt;  
 &lt;link rel=&quot;stylesheet&quot; href=&quot;generic.css&quot; /&gt;  <==  Change your site's dist css
