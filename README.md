@@ -1,10 +1,12 @@
 # gulp kss template
 
-メインサイトのStyleとの衝突を防ぐためにプレフィクスをつけてる
-$kssPrefix: 'kss-';
+template/ 以下のファイルを gulp-kss の templateディレクトリにコピー
 
-<link rel="stylesheet" href="public/kss.css" />
-<link rel="stylesheet" href="generic.css" /> <==  Change your site's dist css
+&lt;link rel=&quot;stylesheet&quot; href=&quot;public/kss.css&quot; /&gt;  
+&lt;link rel=&quot;stylesheet&quot; href=&quot;generic.css&quot; /&gt;  <==  Change your site's dist css
+
+
+## How to Develop
 
 ### pre installed below
 
