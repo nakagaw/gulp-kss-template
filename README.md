@@ -9,9 +9,10 @@ Please copy files to gulp-kss template directory below:
 ```
 
 And, change css path to your compiled css name on template/index.html.
-
-&lt;link rel=&quot;stylesheet&quot; href=&quot;public/kss.css&quot; /&gt;  
-&lt;link rel=&quot;stylesheet&quot; href=&quot;generic.css&quot; /&gt;  <==  Change your site's dist css
+```
+<link rel="stylesheet" href="public/kss.css" />
+<link rel="stylesheet" href="generic.css" /> <==  Change your site's dist css
+```
 
 
 ## How to Develop
