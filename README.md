@@ -28,13 +28,9 @@ And, change css path to your compiled css name on template/index.html.
 ```
 npm install
 ```
-jQuery  
-/Users/nakagawa/Git/new_ui/node_modules/jquery/dist
 
-_normalize.scss is include to generic.css on header.  
-/Users/nakagawa/Git/new_ui/node_modules/normalize-scss/sass
-
-google code-prettify  
+- _normalize.scss is include to generic.scss.  
+- google code-prettify  
 https://github.com/google/code-prettify/blob/master/docs/getting_started.md#serving-your-own-js--css
 
 ### gulp tasks
