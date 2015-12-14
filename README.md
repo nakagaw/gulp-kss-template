@@ -2,8 +2,8 @@
 
 Please copy files to gulp-kss template directory below:
 ```
-├── styleguide.md - overview
 └── template - templateDirectory
+       ├── overview.md - overview
        ├── index.html
        └── public
 ```
@@ -12,8 +12,16 @@ And, change css path to your compiled css name on template/index.html.
 ```
 <link rel="stylesheet" href="public/kss.css" />
 <link rel="stylesheet" href="generic.css" /> <==  Change your site's dist css
+
 ```
 
+Settings options on gulp.js
+```
+    .pipe(gulpkss({
+        overview: __dirname + '/template/overview.md', // スタイルガイドのトップページ
+        templateDirectory: __dirname + '/template/' // スタイルガイドのテンプレを絶対パスで。なかったらkss-node default
+    }))
+```
 
 ## How to Develop
 
@@ -52,3 +60,8 @@ gulp build --env comp
 ```
 gulp sv
 ```
+
+## Reference
+- [kss-node](https://github.com/kss-node/kss-node)
+- [Using custom templates · kss-node/kss-node Wiki](https://github.com/kss-node/kss-node/wiki/Using-custom-templates)
+- [kss-node/helpers.js at master · kss-node/kss-node](https://github.com/kss-node/kss-node/blob/master/generator/handlebars/helpers.js)
